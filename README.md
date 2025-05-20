@@ -1,5 +1,3 @@
-![login jpg](https://github.com/user-attachments/assets/92155725-68d8-43b8-9932-17928cedd839)# AcunMedya.Cafe
-
 # ☕ Cafe Web Sitesi
 
 Bu proje, Acunmedya Akademi "C# Programlama Eğitimi" kursu kapsamında geliştirilmiş .NET Core tabanlı bir web uygulamasıdır. Kıymetli hocalarım Buse Nur Demirbaş ve Murat Yücedağ' ın değerli anlatımlarıyla verdiği bilgiler ışığında ve Abdullah Kuş hocamın teknik destekleri sayesinde geliştirilmiştir.  ASP.NET Core MVC framework'ü kullanılarak geliştirilmiş olup, Area yapısı ile modüler bir mimari sağlanmıştır. Code-First yaklaşımı ile oluşturulan veritabanı, Entity Framework Core ile yönetilmiştir. Admin paneli sayesinde içerikler kolayca güncellenebilir, eklenebilir ve silinebilir.
