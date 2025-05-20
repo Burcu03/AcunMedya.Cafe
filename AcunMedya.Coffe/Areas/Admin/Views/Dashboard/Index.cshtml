@@ -1,0 +1,158 @@
+﻿@model List<AcunMedya.Coffe.Entities.Product>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    decimal maxPrice = Model.Max(p => p.Price); // Progress için max referans fiyat
+}
+
+<div class="main-panel">
+    <div class="content-wrapper">
+        <div class="page-header">
+            <h3 class="page-title">
+                <span class="page-title-icon bg-gradient-primary text-white me-2">
+                    <i class="mdi mdi-home"></i>
+                </span> Admin Paneli
+            </h3>
+            <nav aria-label="breadcrumb">
+                <ul class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page">
+                        <span></span>Overview <i class="mdi mdi-alert-circle-outline icon-sm text-primary align-middle"></i>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="row">
+            <div class="col-md-3 stretch-card grid-margin">
+                <div class="card bg-gradient-danger card-img-holder text-white">
+                    <div class="card-body">
+                        <img src="~/PurpleAdmin-Free-Admin-Template-1.0.0/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                        <h4 class="font-weight-normal mb-3">
+                            Ürün Çeşitlerimiz <i class="mdi mdi-coffee-outline mdi-24px float-end"></i>
+                        </h4>
+                        <h2 class="mb-5">@ViewBag.UrunSayisi</h2>
+                        <h4 class="card-text">Adet ürün</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 stretch-card grid-margin">
+                <div class="card bg-gradient-info card-img-holder text-white">
+                    <div class="card-body">
+                        <img src="~/PurpleAdmin-Free-Admin-Template-1.0.0/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                        <h4 class="font-weight-normal mb-3">
+                            Kategori Sayısı<i class="mdi mdi-apps mdi-24px float-end"></i>
+                        </h4>
+                        <h2 class="mb-5">@ViewBag.KategoriSayisi</h2>
+                        <h4 class="card-text">Adet kategori</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 stretch-card grid-margin">
+                <div class="card bg-gradient-success card-img-holder text-white">
+                    <div class="card-body">
+                        <img src="~/PurpleAdmin-Free-Admin-Template-1.0.0/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                        <h4 class="font-weight-normal mb-3">
+                            Müşteri Yorumları <i class="mdi mdi-chat-processing-outline mdi-24px float-end"></i>
+                        </h4>
+                        <h2 class="mb-5">@ViewBag.YorumSayisi</h2>
+                        <h4 class="card-text">Tane yorum</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 stretch-card grid-margin">
+                <div class="card bg-gradient-danger card-img-holder text-white">
+                    <div class="card-body">
+                        <img src="~/PurpleAdmin-Free-Admin-Template-1.0.0/assets/images/dashboard/circle.svg" class="card-img-absolute" alt="circle-image" />
+                        <h4 class="font-weight-normal mb-3">
+                            En Çok Ürün İçeren Kategori <i class="mdi mdi-tag mdi-24px float-end"></i>
+                        </h4>
+                        <h2 class="mb-5">@ViewBag.MostProductCategoryCount</h2>
+                        <h4 class="card-text">@ViewBag.MostProductCategoryName</h4>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            
+            <div class="col-md-5 grid-margin stretch-card">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="card-title">En Pahalı 5 Ürün</h4>
+                        <canvas id="price-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+            <script>
+                const ctx = document.getElementById('price-chart').getContext('2d');
+
+                const productNames = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.TopProductsNames));
+                const productPrices = @Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(ViewBag.TopProductsPrices));
+
+                const priceChart = new Chart(ctx, {
+                    type: 'bar', 
+                    data: {
+                        labels: productNames,
+                        datasets: [{
+                            label: 'Fiyat (TRY)',
+                            data: productPrices,
+                            backgroundColor: 'rgba(255, 99, 132, 0.5)',
+                            borderColor: 'rgba(255, 99, 132, 1)',
+                            borderWidth: 1
+                        }]
+                    },
+                    options: {
+                        scales: {
+                            y: {
+                                beginAtZero: true,
+                                ticks: {
+
+                                    callback: function(value) {
+                                        return value + " ₺";
+                                    }
+                                }
+                            }
+                        }
+                    }
+                });
+            </script>
+
+        </div>
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <h4 class="card-title">Menümüz</h4>
+                    <p class="card-description">
+                       <code>.table</code>
+                    </p>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th> 🖼️ </th>
+                                <th> Ürün </th>
+                                <th> Fiyat </th>
+                                <th> Kategori </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                             @foreach (var item in Model)
+                            {
+                            <tr>
+                                <td class ="py-1">
+                                    <img src="@item.ImageUrl" alt="image" style="width: 50px; height: 50px; object-fit: cover;" />
+                                    </td>
+                                    <td> @item.ProductName </td>
+                                    <td> @item.Price <i class="mdi mdi-currency-try"></i> </td>
+                                    <td> @item.Category.CategoryName </td>
+                                    <td><label class="badge badge-warning">@item.Category.CategoryName</label></td>
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

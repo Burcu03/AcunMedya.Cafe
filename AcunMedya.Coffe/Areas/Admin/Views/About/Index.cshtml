@@ -1,0 +1,70 @@
+﻿@model List<AcunMedya.Coffe.Entities.About>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+<div class="content-wrapper">
+    <div class="page-header">
+        <h3 class="page-title"> Hakkında Bilgisi </h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Tablo</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Hakkında</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Altbaşlık</th>
+                                <th>Başlık</th>
+                                <th>Açıklama</th>
+                                <th>Resim</th>
+                                <th>Video</th>
+                                <th>Güncelle</th>
+                                <th>Sil</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <td>@item.AboutId</td>
+                                    <td>@item.SubTitle</td>
+                                    <td>@item.Title</td>
+                                    <td>@item.Description</td>
+                                    <td>
+                                        @if (item.ImageUrl != null)
+                                        {
+                                            <img src="@Url.Content("~/Uploads/Images/" + item.ImageUrl)" alt="Resim" style="width: 100px; height: 100px;" />
+                                        }
+                                    </td>
+                                    <td>
+                                        @if (item.VideoUrl != null)
+                                        {
+                                            <video width="100" height="100" controls>
+                                                <source src="@Url.Content("~/Uploads/Videos/" + item.VideoUrl)" type="video/mp4">
+                                                Tarayıcınız video etiketini desteklemiyor.
+                                            </video>
+                                        }
+                                    <td><a href="/Admin/About/UpdateAbout/@item.AboutId" class="badge badge-info">Güncelle</a></td>
+                                    <td><a href="/Admin/About/DeleteAbout/@item.AboutId" class="badge badge-danger">Sil</a></td>
+                                </tr>
+                            }
+
+
+                        </tbody>
+                    </table>
+                    <a href="/Admin/About/AddAbout" class="btn btn-primary"><i class="fa fa-plus-circle"></i> Yeni Bilgi</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

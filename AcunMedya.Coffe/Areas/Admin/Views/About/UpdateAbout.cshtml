@@ -1,0 +1,46 @@
+﻿@model AcunMedya.Coffe.Entities.About
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="page-header">
+        <h3 class="page-title"> Hakkında Bilgisi Güncelleme Sayfası </h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Güncelleme İşlemi</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Hakkında</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <form method="post">
+                        <input type="hidden" asp-for="AboutId" class="form-control" />
+                        <label>Altbaşlık</label>
+                        <input type="text" asp-for="SubTitle" class="form-control" />
+                        <br />
+                        <label>Başlık</label>
+                        <input type="text" asp-for="Title" class="form-control" />
+                        <br />
+                        <label>Açıklama</label>
+                        <input type="text" asp-for="Description" class="form-control" />
+                        <br />
+                        <label>Resim</label>
+                        <input type="text" asp-for="ImageUrl" class="form-control" />
+                        <br />
+                        <label>Video</label>
+                        <input type="text" asp-for="VideoUrl" class="form-control" />
+                        <br />
+                        <button type="submit" class="btn btn-primary">Güncelle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

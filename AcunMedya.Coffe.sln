@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35327.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AcunMedya.Coffe", "AcunMedya.Coffe\AcunMedya.Coffe.csproj", "{7BB92AB0-A13D-4F96-A34C-8803C645BA2A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{022E0CA5-D488-4066-A2E5-D99CB6FE415E}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BB92AB0-A13D-4F96-A34C-8803C645BA2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB92AB0-A13D-4F96-A34C-8803C645BA2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB92AB0-A13D-4F96-A34C-8803C645BA2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB92AB0-A13D-4F96-A34C-8803C645BA2A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BFFDD804-B7FD-4075-BFCE-08AC6F8E4723}
+	EndGlobalSection
+EndGlobal

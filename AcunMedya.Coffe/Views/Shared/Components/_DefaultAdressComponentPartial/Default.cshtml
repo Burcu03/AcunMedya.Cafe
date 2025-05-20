@@ -1,0 +1,24 @@
+﻿<!-- Adres & Saat Bilgisi (Header Top) -->
+<div class="header-top-area py-2" style="background: rgba(0, 0, 0, 0.4); color: #fff; width: 100%; padding-left: 0; padding-right: 0;">
+	<div class="container">
+		<div class="row justify-content-between">
+			<!-- Gün ve Saat Bilgisi -->
+			<div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center">
+				<ul class="list-inline mb-0 header-contact-info">
+					<li class="list-inline-item me-4">
+						<i class="fa fa-clock-o me-1 text-warning" @* style="height:70px; width:80px; *@"></i> @ViewBag.OpenHours
+					</li>
+				</ul>
+			</div>
+
+			<!-- Telefon Bilgisi -->
+			<div class="col-lg-6 col-md-6 col-sm-6 d-flex align-items-center">
+				<ul class="list-inline mb-0 header-contact-info">
+					<li class="list-inline-item">
+						<i class="fa fa-phone me-1 text-warning"></i> <a href="tel:@ViewBag.Call" class="text-light text-decoration-none">@ViewBag.Call</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>

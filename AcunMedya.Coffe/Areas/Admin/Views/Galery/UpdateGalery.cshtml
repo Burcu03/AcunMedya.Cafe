@@ -1,0 +1,40 @@
+﻿@model AcunMedya.Coffe.Entities.Galery
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="page-header">
+        <h3 class="page-title"> Galeri Güncelleme Sayfası </h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Güncelleme İşlemi</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Galeri</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <form method="post">
+                        <input type="hidden" asp-for="GaleryId" class="form-control" />
+                        <label>Resim</label>
+                        <input type="text" asp-for="ImageUrl" class="form-control" />
+                        <br />
+                        <label>Açıklama</label>
+                        <input type="text" asp-for="Description" class="form-control" />
+                        <br />
+                        <label>Başlık</label>
+                        <input type="text" asp-for="Title" class="form-control" />
+                        <br />
+                        <button type="submit" class="btn btn-primary">Güncelle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

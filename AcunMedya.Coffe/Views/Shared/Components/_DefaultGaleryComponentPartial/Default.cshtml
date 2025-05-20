@@ -1,0 +1,28 @@
+﻿@model List<AcunMedya.Coffe.Entities.Galery>
+
+<section class="gallery-area section-gap" id="gallery">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-60 col-lg-10">
+                <div class="title text-center">
+                    <h1 class="mb-10">Kahveyle Dolu Unutulmaz Anlardan Kareler</h1>
+                    <p style="font-size: 1.1rem; font-weight: normal;">Kahveyle dolu en özel anlarımızı sizinle paylaşıyoruz.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+                    <a href="@item.ImageUrl" class="img-pop-home d-block">
+                        <img src="@item.ImageUrl"
+                             class="img-fluid w-100"
+                             alt="Gallery Image"
+                             style="height: 250px; object-fit: cover; border-radius: 8px;">
+                    </a>
+                </div>
+            }
+        </div>
+    </div>
+</section>

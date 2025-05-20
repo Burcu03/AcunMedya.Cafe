@@ -1,0 +1,37 @@
+﻿@model List<AcunMedya.Coffe.Entities.Testimonial>
+<div class="row d-flex justify-content-center">
+	<div class="menu-content pb-60 col-lg-10">
+		<div class="title text-center">
+			<h1 class="mb-10">Bir Fincan, Bin Anlam: Müşterilerimizin Yorumları</h1>
+			<p style="font-size: 1.1rem; font-weight: normal;">Kahvemizi deneyimleyenleri onlardan dinleyin.</p>
+		</div>
+	</div>
+</div>
+<div class="row">
+	@foreach (var item in Model)
+{
+        <div class="col-lg-6 col-md-6 single-review d-flex align-items-start" style="margin-bottom: 30px;">
+            <img src="@item.ImageUrl" alt="Müşteri resmi" style="width: 80px; height: 80px; object-fit: cover; border-radius: 50%; margin-right: 15px;" />
+            <div>
+                <div class="title d-flex flex-row align-items-center">
+                    <h4>@item.Title</h4>
+                    <div class="star" style="margin-left: 10px;">
+                        @for (int i = 1; i <= 5; i++)
+                        {
+                            if (i <= item.raiting)
+                            {
+                                <span class="fa fa-star checked"></span>
+                            }
+                            else
+                            {
+                                <span class="fa fa-star"></span>
+                            }
+                        }
+                    </div>
+                </div>
+                <p>@item.Description</p>
+            </div>
+        </div>
+
+}
+</div>

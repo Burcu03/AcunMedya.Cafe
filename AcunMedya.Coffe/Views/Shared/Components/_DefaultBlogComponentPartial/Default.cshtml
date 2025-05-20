@@ -1,0 +1,44 @@
+﻿@model List<AcunMedya.Coffe.Entities.Blog>
+
+<section class="blog-area section-gap" id="blog">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-60 col-lg-10">
+                <div class="title text-center">
+                    <h1 class="mb-10">Kahve Dünyasına Yolculuk: Aromalar, Hikayeler ve İlham</h1>
+                    <p style="font-size: 1.1rem; font-weight: normal;">Kahve tutkunuysanız, burada her yudumda keşfedilecek yeni tatlar, kahve kültürü ve ilham verici hikayeler sizi bekliyor.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            @if (Model != null && Model.Any())
+            {
+                foreach (var item in Model)
+                {
+                    // Mevcut kod
+                }
+            }
+            else
+            {
+                <p>Henüz blog bulunmamaktadır.</p>
+            }
+
+            @foreach (var item in Model)
+            {
+                <div class="col-lg-3 col-md-6 single-blog" style="margin-bottom: 30px; padding: 10px;">
+                    <img class="img-fluid blog-image" src="@item.ImageUrl" alt="" style="width: 100%; height: 250px; object-fit: cover; margin-bottom: 20px;">
+                    <ul class="post-tags" style="list-style: none; padding: 0; margin-bottom: 10px;">
+                        <li>Kahve</li>
+                        <li>Lezzet</li>
+                    </ul>
+                    <h6>@item.SubTitle</h6>
+                    <br />
+                    <a href="#"><h4>@item.Title</h4></a>
+                    <p>@item.Description</p>
+                    <p class="post-date" style="font-size: 14px; color: #777; margin-top: 10px;">20/05/2025</p>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+

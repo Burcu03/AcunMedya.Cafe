@@ -1,0 +1,35 @@
+﻿@model List<AcunMedya.Coffe.Entities.Product>
+
+<section class="menu-area section-gap" id="coffee">
+	<div class="container">
+		<div class="row d-flex justify-content-center">
+			<div class="menu-content pb-60 col-lg-10">
+				<div class="title text-center">
+					<h1 class="mb-10">Kahveyle Başlayan Lezzet Yolculuğu</h1>
+					<p style="font-size: 1.1rem; font-weight: normal;">Kahvenizi yudumlarken eşlik edecek tatlılar ve içeceklerle dolu menümüz sizi bekliyor.</p>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			@foreach (var item in Model)
+			{
+				<div class="col-lg-4 mb-4">
+					<div class="single-menu">
+						<div class="title-div mb-2">
+							<h6 class="text-muted">@item.Category.CategoryName</h6>
+							<div class="d-flex justify-content-between align-items-center">
+								<h4 class="me-2">@item.ProductName</h4>
+								<p class="price m-0">₺ @item.Price</p>
+							</div>
+						</div>
+						@if (!string.IsNullOrEmpty(item.ImageUrl))
+						{
+							<img src="@item.ImageUrl" class="img-fluid rounded mb-2" style="height: 200px; width: 100%; object-fit: cover;" alt="@item.ProductName" />
+						}
+						<p>@item.Description</p>
+					</div>
+				</div>
+			}
+		</div>
+	</div>
+</section>

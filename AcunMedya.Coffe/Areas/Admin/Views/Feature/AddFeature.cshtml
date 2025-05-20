@@ -1,0 +1,39 @@
+﻿@model AcunMedya.Coffe.Entities.Feature
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content-wrapper">
+    <div class="page-header">
+        <h3 class="page-title"> İçerik Ekleme Sayfası </h3>
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Ekleme İşlemi</a></li>
+                <li class="breadcrumb-item active" aria-current="page">İçerik</li>
+            </ol>
+        </nav>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 grid-margin stretch-card">
+            <div class="card">
+                <div class="card-body">
+                    <form method="post">
+                        <label>Altbaşlık</label>
+                        <input type="text" asp-for="SubTitle" class="form-control" />
+                        <br />
+                        <label>Başlık</label>
+                        <input type="text" asp-for="Title" class="form-control" />
+                        <br />
+                        <label>Resim</label>
+                        <input type="text" asp-for="ImageUrl" class="form-control" />
+                        <br />
+                        <button type="submit" class="btn btn-primary">Ekle</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
