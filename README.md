@@ -1,4 +1,4 @@
-# AcunMedya.Cafe
+![login jpg](https://github.com/user-attachments/assets/92155725-68d8-43b8-9932-17928cedd839)# AcunMedya.Cafe
 
 # ☕ Cafe Web Sitesi
 
@@ -30,36 +30,34 @@ Bu proje, Acunmedya Akademi "C# Programlama Eğitimi" kursu kapsamında gelişti
 - ## 🖼️ **Ana Sayfa**
 - ![anasayfa jpg](https://github.com/user-attachments/assets/adf2fe29-adc3-47de-8d3a-102b22e60213)
 
-  ![Ana Sayfa](https://github.com/Burcu03/AcunMedya.Cafe/AcunMedya.Coffe/raw/master/wwwroot/images/anasayfa.png)
+- ## 🖼️ **Hakkımızda**
+- ![hakkımızda jpg](https://github.com/user-attachments/assets/aaf541ca-6bb6-4c6b-8dc6-49985866ea7c)
 
-- ## 🖼️ **Hakkımızda**  
-  ![Hakkımızda](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/hakkimizda.png)
+- ## 🍽 **Menü**
+- ![menü jpg](https://github.com/user-attachments/assets/0a30dee8-a7b9-403a-a3e9-03c096adb3c4)
 
-- ## 🍽 **Menü**  
-  ![Menü](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/menu.png)
+- ## 📸 **Galeri**
+- ![galeri jpg](https://github.com/user-attachments/assets/86a08e17-eb15-4d62-8ff2-067d065ce9a8)
 
-- ## 📸 **Galeri**  
-  ![Galeri](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/galeri.png)
+- ## 💬 **Yorumlar**
+- ![yorumlar jpg](https://github.com/user-attachments/assets/a3cf9db4-5f94-4608-aee7-6642b765ec09)
 
-- ## 💬 **Yorumlar**  
-  ![Yorumlar](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/yorumlar.png)
-
-- ## 📰 **Blog**  
-  ![Blog](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/blog.png)
+- ## 📰 **Blog**
+- ![blog jpg](https://github.com/user-attachments/assets/c7b56355-c2f6-420e-9738-bc71f82fd7ff)
 
 ---
 
 # 🔐 Admin Paneli Görselleri
 
-- ## 🔑 **Admin Giriş**  
-  ![Admin Giriş](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/login.png)
+- ## 🔑 **Admin Giriş**
+- ![login jpg](https://github.com/user-attachments/assets/fd88c7bf-0ba8-4ded-8330-2c7d0ae92447)
 
-- ## ⚙️ **Admin Panel Ana Sayfa**  
-  ![Admin Panel](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/dashboard.png)  
-  ![Admin Panel2](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/dashboard2.png)
+- ## ⚙️ **Admin Panel Ana Sayfa**
+- ![dashboard jpg](https://github.com/user-attachments/assets/617ff106-af1a-48ae-9f87-652b95d879d2)
+- ![dashboard2 jpg](https://github.com/user-attachments/assets/f16364d9-b3f2-4015-b0c0-06e874368b0d)
 
-- ## 🗂 **Admin Kategori Sayfası**  
-  ![Admin Kategori](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/admin-kategori.png)
+- ## 🗂 **Admin Kategori Sayfası**
+- ![adminpaneli jpg](https://github.com/user-attachments/assets/6a8c6be0-bdbd-4a87-bad5-d39dc5a09c72)
 
-- ## 🍔 **Admin Ürün Sayfası**  
-  ![Admin Ürünler](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/admin-urunler.png)
+- ## 🍔 **Admin Ürün Sayfası**
+- ![adminpaneli2 jpg](https://github.com/user-attachments/assets/58995734-a2a1-482e-b7e0-99fb1f4e47c7)
