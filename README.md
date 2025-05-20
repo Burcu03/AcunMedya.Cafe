@@ -28,7 +28,7 @@ Bu proje, Acunmedya Akademi "C# Programlama Eğitimi" kursu kapsamında gelişti
 # 📸 Projeden Görseller
 
 - ## 🖼️ **Ana Sayfa**  
-  ![Ana Sayfa](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/anasayfa.png)
+  ![Ana Sayfa](https://github.com/Burcu03/AcunMedya.Cafe/AcunMedya.Coffe/raw/master/wwwroot/images/anasayfa.png)
 
 - ## 🖼️ **Hakkımızda**  
   ![Hakkımızda](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/hakkimizda.png)
