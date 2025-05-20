@@ -44,7 +44,7 @@ Bu proje, Acunmedya Akademi "C# Programlama Eğitimi" kursu kapsamında gelişti
 - ## 📰 **Blog**  
 ![Blog](https://github.com/KULLANICIADI/REPOADI/blob/main/wwwroot/images/blog.png)
 
----AcunMedya.Coffe/wwwroot/images/admin-kategori.png
+---
 
 # 🔐 Admin Paneli Görselleri
 
