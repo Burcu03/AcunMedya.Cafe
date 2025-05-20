@@ -30,7 +30,7 @@ Bu proje, Acunmedya Akademi "C# Programlama Eğitimi" kursu kapsamında gelişti
   ![Ana Sayfa](https://github.com/KULLANICIADI/CafeDelight/blob/main/wwwroot/images/anasayfa.png)
 
 - ## 🖼️ **Hakkımızda**  
-  ![Hakkımızda](https://github.com/KULLANICIADI/CafeDelight/blob/main/wwwroot/images/hakkimizda.png)
+  ![Hakkımızda]([https://github.com/KULLANICIADI/CafeDelight/blob/main/wwwroot/images/hakkimizda.png](https://raw.githubusercontent.com/Burcu03/AcunMedya.Cafe/master/wwwroot/images/hakkimizda.png))
 
 - ## 🍽 **Menü**  
 ![Menü](https://github.com/KULLANICIADI/REPOADI/blob/main/wwwroot/images/menu.png)
