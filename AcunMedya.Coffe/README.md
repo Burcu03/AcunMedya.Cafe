@@ -44,7 +44,7 @@ Bu proje, Acunmedya Akademi "C# Programlama Eğitimi" kursu kapsamında gelişti
 - ## 📰 **Blog**  
 ![Blog](https://github.com/KULLANICIADI/REPOADI/blob/main/wwwroot/images/blog.png)
 
----
+---AcunMedya.Coffe/wwwroot/images/admin-kategori.png
 
 # 🔐 Admin Paneli Görselleri
 
@@ -56,7 +56,7 @@ Bu proje, Acunmedya Akademi "C# Programlama Eğitimi" kursu kapsamında gelişti
 ![Admin Panel2](https://github.com/KULLANICIADI/REPOADI/blob/main/wwwroot/images/dashboard2.png)
 
 - ## 🗂 **Admin Kategori Sayfası**  
-![Admin Kategori](https://github.com/KULLANICIADI/REPOADI/blob/main/wwwroot/images/admin-kategori.png)
+![Admin Kategori](https://github.com/Burcu03/AcunMedya.Coffe/wwwroot/images/admin-kategori.png)
 
 - ## 🍔 **Admin Ürün Sayfası**  
 ![Admin Ürünler](https://github.com/KULLANICIADI/REPOADI/blob/main/wwwroot/images/admin-urunler.png)
