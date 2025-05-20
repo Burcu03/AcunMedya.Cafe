@@ -34,30 +34,30 @@ Bu proje, Acunmedya Akademi "C# Programlama Eğitimi" kursu kapsamında gelişti
   ![Hakkımızda](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/hakkimizda.png)
 
 - ## 🍽 **Menü**  
-![Menü](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/menu.png)
+  ![Menü](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/menu.png)
 
 - ## 📸 **Galeri**  
-![Galeri](https://github.com/Burcu03/AcunMedya.CafeI/raw/master/wwwroot/images/galeri.png)
+  ![Galeri](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/galeri.png)
 
 - ## 💬 **Yorumlar**  
-![Yorumlar](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/yorumlar.png)
+  ![Yorumlar](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/yorumlar.png)
 
 - ## 📰 **Blog**  
-![Blog](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/blog.png)
+  ![Blog](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/blog.png)
 
 ---
 
 # 🔐 Admin Paneli Görselleri
 
 - ## 🔑 **Admin Giriş**  
-![Admin Giriş](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/login.png)
+  ![Admin Giriş](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/login.png)
 
 - ## ⚙️ **Admin Panel Ana Sayfa**  
-![Admin Panel](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/dashboard.png)
-![Admin Panel2](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/dashboard2.png)
+  ![Admin Panel](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/dashboard.png)  
+  ![Admin Panel2](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/dashboard2.png)
 
 - ## 🗂 **Admin Kategori Sayfası**  
-![Admin Kategori](https://github.com/Burcu03/AcunMedya.Cafe/blob/master/wwwroot/images/admin-kategori.png)
+  ![Admin Kategori](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/admin-kategori.png)
 
 - ## 🍔 **Admin Ürün Sayfası**  
-![Admin Ürünler](https://github.com/Burcu03/AcunMedya.Cafe/blob/master/wwwroot/images/admin-urunler.png)
+  ![Admin Ürünler](https://github.com/Burcu03/AcunMedya.Cafe/raw/master/wwwroot/images/admin-urunler.png)
